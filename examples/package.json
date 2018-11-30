@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "summary": "parcel serve summary.html"
+    "summary": "parcel serve summary.html",
+    "image": "parcel serve image.html"
   },
   "dependencies": {},
   "devDependencies": {
