@@ -1,0 +1,40 @@
+{
+  "name": "tfjs-react",
+  "version": "0.1.0",
+  "description": "Various React components for tensorflow.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksachdeva/tfjs-react.git"
+  },
+  "keywords": [
+    "React",
+    "Tensorflow.js",
+    "ML",
+    "visualizations"
+  ],
+  "author": "Kapil Sachdeva",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ksachdeva/tfjs-react/issues"
+  },
+  "homepage": "https://github.com/ksachdeva/tfjs-react#readme",
+  "devDependencies": {
+    "@types/json-stable-stringify": "^1.0.32",
+    "@types/react": "^16.7.3",
+    "@types/react-dom": "^16.0.9",
+    "ts-lint": "^4.5.1",
+    "ts-node": "^7.0.1",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.2.1"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^0.14.0",
+    "@tensorflow/tfjs-vis": "^0.3.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}

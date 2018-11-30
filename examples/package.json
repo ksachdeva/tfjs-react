@@ -1,0 +1,15 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "summary": "parcel serve summary.html"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
+  },
+  "author": "Kapil Sachdeva",
+  "license": "Apache-2.0"
+}
