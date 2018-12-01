@@ -8,15 +8,21 @@ export interface ModelSummaryProps {
 
 export class ModelSummary extends React.Component<ModelSummaryProps, {}> {
 
+  private _summaryElement: React.RefObject<HTMLDivElement>;
+
+  constructor(props: ModelSummaryProps) {
+    super(props);
+    this._summaryElement = React.createRef();
+  }
+
   componentDidMount() {
-    const modelSummaryElement = this.refs.summary as HTMLElement;
-    return tfvis.show.modelSummary(modelSummaryElement, this.props.model);
+    return tfvis.show.modelSummary(this._summaryElement.current, this.props.model);
   }
 
   public render() {
     return (
       <React.Fragment>
-        <div ref='summary'></div>
+        <div ref={this._summaryElement} />
       </React.Fragment>
     );
   }

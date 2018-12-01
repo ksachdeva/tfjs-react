@@ -9,16 +9,22 @@ export interface ImageTensorProps {
 
 export class ImageTensor extends React.Component<ImageTensorProps> {
 
+    private _canvasElem: React.RefObject<HTMLCanvasElement>;
+
+    constructor(props: ImageTensorProps) {
+        super(props);
+        this._canvasElem = React.createRef();
+    }
+
     componentDidMount() {
-        const canvas = this.refs.canvas as HTMLCanvasElement;
-        return tf.toPixels(this.props.tensor, canvas);
+        return tf.toPixels(this.props.tensor, this._canvasElem.current);
     }
 
     render() {
         return (
             <React.Fragment>
-                <canvas ref="canvas" width={this.props.width} height={this.props.height} />
+                <canvas ref={this._canvasElem} width={this.props.width} height={this.props.height} />
             </React.Fragment>
-        )
+        );
     }
 }
